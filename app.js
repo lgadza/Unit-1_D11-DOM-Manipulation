@@ -25,5 +25,5 @@ const addClass = function () {
 addClass();
 
 visibleImg = function () {
-  const img = document.getElementsByClassName(".img");
+  const img = document.querySelectorAll(".img");
 };
