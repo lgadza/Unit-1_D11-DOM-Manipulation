@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <style>
+    body {
+      width: 80%;
+      margin-left: 10%;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+    table {
+      background-color: white;
+      width: 50%;
+      margin-left: 25%;
+      display: flex;
+      justify-content: center;
+      border-collapse: collapse;
+      margin-bottom: 50px;
+
+      /* width: 80%; */
+    }
+    table,
+    th,
+    td {
+      border: 2px solid rgba(255, 128, 82, 0.6);
+    }
+    #pic {
+      height: 20px;
+    }
+    #pic .img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .price {
+      text-align: center;
+    }
+    #address {
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .link {
+      text-align: center;
+    }
+    #copy {
+      text-align: center;
+      margin-top: 0px;
+      background-color: rgba(255, 128, 82, 0.6);
+      padding: 5px;
+    }
+    #text {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    button {
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .amazon-link {
+      color: red;
+    }
+  </style>
+  <body>
+    <h1 id="shopname">Impuls Gaming</h1>
+    <table>
+      <tr>
+        <th></th>
+        <th>Console</th>
+        <th>FIFA 23</th>
+        <th>Joypads</th>
+        <th>Headphones</th>
+        <th>Televions</th>
+      </tr>
+      <tr id="pic">
+        <th>Picture</th>
+        <td><img src="1.jpg" alt="" class="img" /></td>
+        <td><img src="5.jpeg" alt="" class="img" /></td>
+        <td><img src="3.jpeg" alt="" class="img" /></td>
+        <td><img src="4.jpeg" alt="" class="img" /></td>
+        <td><img src="2.png" alt="" class="img" /></td>
+      </tr>
+      <tr>
+        <th>Discription</th>
+        <td>New PS5 Console</td>
+        <td>Playing FIFA 23</td>
+        <td>New PS4 & PS5 Pads</td>
+        <td>Wireless Headphones</td>
+        <td>Old Televions</td>
+      </tr>
+      <tr>
+        <th class="price">Price</th>
+        <td class="price">400</td>
+        <td class="price">20</td>
+        <td class="price">100</td>
+        <td class="price">50</td>
+        <td class="price">400</td>
+      </tr>
+      <tr>
+        <th>Amazon link</th>
+        <td class="link">
+          <a
+            href="https://www.amazon.pl/Konsola-Playstation-Forbidden-Spider-Man-Mmorales/dp/B0BB2CJ9T4/ref=asc_df_B0BB2CJ9T4/?tag=plshogostdde-21&linkCode=df0&hvadid=504533938986&hvpos=&hvnetw=g&hvrand=4979280848714500834&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1011435&hvtargid=pla-1765546740945&psc=1"
+            >ps5</a
+          >
+        </td>
+        <td class="link">
+          <a
+            href="https://www.amazon.pl/FIFA-23-PlayStation-Electronic-Arts/dp/B0B6JR3YDW/ref=sr_1_3?crid=13R1J1KKZ795Q&keywords=fifa+23&qid=1665405277&sprefix=fif%2Caps%2C169&sr=8-3"
+            >FIFA 23</a
+          >
+        </td>
+        <td class="link">
+          <a
+            href="https://www.amazon.pl/Lioncast-wy%C5%9Bwietlaczem-oryginalnego-Playstation-bezprzewodowy/dp/B091Z4GBK4/ref=pd_rhf_d_se_s_pd_sbs_rvi_sccl_1_4/257-0274668-9147573?pd_rd_w=WzQFp&content-id=amzn1.sym.7e388ef7-24ae-41e5-80e7-9e03eb3cdeaa&pf_rd_p=7e388ef7-24ae-41e5-80e7-9e03eb3cdeaa&pf_rd_r=N37S4M5KZZWWG1Q6CVBP&pd_rd_wg=i0xI6&pd_rd_r=6f0dd719-5a4d-4b62-9490-86ee196b02cf&pd_rd_i=B091Z4GBK4&psc=1"
+            >New PS4 & PS5 Pads</a
+          >
+        </td>
+        <td class="link">
+          <a
+            href="https://www.amazon.pl/VMK20-Wireless-ANC-Headphones-szary/dp/B09TTJ1LLM/ref=sr_1_4_sspa?crid=2AAARAPV3C536&keywords=headphones&qid=1665405357&sprefix=head%2Caps%2C132&sr=8-4-spons&psc=1"
+          >
+            Headphones</a
+          >
+        </td>
+        <td class="link">
+          <a
+            href="https://www.amazon.pl/XiaomiMi-Smart-Telewizor-Potr%C3%B3jny-Android/dp/B07X35S11S/ref=sr_1_5?__mk_pl_PL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JZPGWJ6H6IG9&keywords=tv&qid=1665405226&sprefix=tv%2Caps%2C154&sr=8-5"
+            >Televion</a
+          >
+        </td>
+      </tr>
+    </table>
+    <div id="text">
+      <div>
+        <label for="text">Write a message to Us:</label>
+        <br />
+        <textarea
+          name="Write a message to Us"
+          id="text"
+          cols="100"
+          rows="2"
+          placeholder="Write here"
+        ></textarea>
+        <button>Post</button>
+      </div>
+    </div>
+
+    <footer>
+      <div id="address">
+        <div>
+          <address>Zwierzyniecka 919/12,</address>
+          <address>Bialystok,</address>
+          <address>Poland, 15-333</address>
+        </div>
+      </div>
+
+      <div id="copy">&copy; Impuls Gaming</div>
+    </footer>
+  </body>
+  <script rel="module" src="app.js"></script>
+</html>
