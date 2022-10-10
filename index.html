@@ -14,12 +14,22 @@
     h1 {
       display: flex;
       justify-content: center;
-      margin-bottom: 100px;
     }
+    #button {
+      margin-bottom: 100px;
+      margin-left: 45%;
+    }
+    #button2 {
+      position: absolute;
+      display: flex;
+      left: 5px;
+      top: 5px;
+    }
+
     table {
       background-color: white;
-      width: 50%;
-      margin-left: 25%;
+      width: 80%;
+      margin-left: 10%;
       display: flex;
       justify-content: center;
       border-collapse: collapse;
@@ -76,13 +86,22 @@
       padding-left: 10px;
       padding-right: 10px;
     }
+    #button2 {
+    }
     .amazon-link {
       color: red;
+    }
+    .change {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      margin-left: 45%;
     }
   </style>
   <body>
     <h1 id="shopname">Impuls Gaming</h1>
+    <button id="button">Click me</button>
     <table>
+      <button id="button2">Click me</button>
       <tr>
         <th></th>
         <th>Console</th>
@@ -165,6 +184,9 @@
       </div>
     </div>
 
+    <div class="change">
+      <button id="change">Change Address</button>
+    </div>
     <footer>
       <div id="address">
         <div>

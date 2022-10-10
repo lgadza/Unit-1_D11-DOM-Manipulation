@@ -1,12 +1,11 @@
-const shopname = function () {
+document.getElementById("button").onclick = function () {
   document.getElementById("shopname").innerText = "Impuls Gaming Parlor";
 };
-shopname();
-const pageBackground = function () {
+
+document.getElementById("button2").onclick = function () {
   document.querySelector("html").style.backgroundColor =
     "rgba(213, 189, 181, 0.6)";
 };
-pageBackground();
 const fakeAddress = function () {
   document.getElementById("address").innerHTML = `<div>
           <address>15135 Pumula South,</address>
@@ -14,10 +13,20 @@ const fakeAddress = function () {
           <address>Zimbabwe, 15-333</address>
         </div>`;
 };
-fakeAddress();
+document.getElementById("change").onclick = function () {
+  document.getElementById("address").innerHTML = `<div>
+          <address>15135 Pumula South,</address>
+          <address>Bulawayo,</address>
+          <address>Zimbabwe, 15-333</address>
+        </div>`;
+};
+
+// fakeAddress();
 const addClass = function () {
-  const elem = document.querySelectorAll("a");
-  elem.classList.add("amazon-link");
+  for (i = 0; i < a.length; i++) {
+    const elem = document.querySelectorAll("a");
+    elem.classList.add("amazon-link");
+  }
 };
 addClass();
 
