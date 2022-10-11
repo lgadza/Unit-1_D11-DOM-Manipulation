@@ -17,13 +17,48 @@ document.getElementById("change").onclick = function () {
 };
 
 const addClass = function () {
-  for (i = 0; i < a.length; i++) {
-    const elem = document.querySelectorAll("a");
-    elem.classList.add("amazon-link");
+  const elem = document.querySelectorAll("a");
+  console.log(elem);
+  for (i = 0; i < elem.length; i++) {
+    elem[i].classList.add("amazon-link");
   }
 };
-addClass();
+// addClass();
 
 visibleImg = function () {
   const img = document.querySelectorAll(".img");
+  console.log(img);
+  for (let i = 0; i < img.length; i++) {
+    img[i].img[i].style.display = "none";
+  }
 };
+// visibleImg();
+
+const shopname = document.querySelector("#shopname");
+shopname.classList.add("louis");
+console.log(shopname);
+
+const randomColor = function (elem, colorChange) {
+  let element = document.querySelectorAll(".price");
+  let color = function getRandColor() {
+    var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
+    while (color.length < 6) {
+      color = "0" + color;
+    }
+    return "#" + color;
+  };
+  //   console.log(getRandColor());
+  for (let i = 0; i < element.length; i++) {
+    element[i].style.color = String(color);
+  }
+};
+randomColor();
+let color = function getRandColor() {
+  var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
+  while (color.length < 6) {
+    color = "0" + color;
+  }
+  return "#" + color;
+};
+// console.log(getRandColor());
+console.log(color());
