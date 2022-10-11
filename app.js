@@ -49,7 +49,7 @@ const randomColor = function (elem, colorChange) {
   };
   //   console.log(getRandColor());
   for (let i = 0; i < element.length; i++) {
-    element[i].style.color = String(color);
+    element[i].style.color = "#be139d";
   }
 };
 randomColor();
@@ -60,5 +60,4 @@ let color = function getRandColor() {
   }
   return "#" + color;
 };
-// console.log(getRandColor());
 console.log(color());
